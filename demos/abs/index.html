@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Demonstração fictícia de indicadores de absenteísmo do Projeto ABS.">
+  <title>Dashboard Executivo - ABS | Demonstração fictícia</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para os indicadores</a>
+  <header class="header wrap">
+    <div>
+      <p class="eyebrow">Projeto ABS · Demonstração</p>
+      <h1>Dashboard Executivo - ABS</h1>
+      <p class="subtitle">Indicadores de absenteísmo em um cenário simulado</p>
+    </div>
+    <a class="back" href="../../index.html#projetos">Voltar ao portfólio</a>
+  </header>
+  <main id="conteudo" class="wrap">
+    <p class="notice"><strong>DADOS FICTÍCIOS</strong> · Equipes, períodos e valores criados exclusivamente para demonstração. Nenhum dado corporativo ou pessoal foi utilizado.</p>
+    <section class="filters" aria-label="Filtros do painel">
+      <label>Período
+        <select id="periodo">
+          <option value="todos">Janeiro a junho de 2026</option>
+          <option value="jan">Janeiro de 2026</option><option value="fev">Fevereiro de 2026</option>
+          <option value="mar">Março de 2026</option><option value="abr">Abril de 2026</option>
+          <option value="mai">Maio de 2026</option><option value="jun">Junho de 2026</option>
+        </select>
+      </label>
+      <label>Equipe
+        <select id="equipe">
+          <option value="todas">Todas as equipes fictícias</option>
+          <option value="Equipe A">Equipe A</option><option value="Equipe B">Equipe B</option><option value="Equipe C">Equipe C</option>
+        </select>
+      </label>
+    </section>
+    <section class="metrics" aria-label="Indicadores principais">
+      <article class="metric"><h2>Colaboradores simulados</h2><strong id="colaboradores">—</strong></article>
+      <article class="metric"><h2>Atestados simulados</h2><strong id="atestados">—</strong></article>
+      <article class="metric"><h2>Ausências registradas</h2><strong id="ausencias">—</strong></article>
+      <article class="metric"><h2>Dias úteis no recorte</h2><strong id="dias-uteis">—</strong></article>
+      <article class="metric accent"><h2>Maior taxa por equipe</h2><strong id="maior-taxa">—</strong><small id="maior-equipe"></small></article>
+      <article class="metric accent"><h2>Taxa geral</h2><strong id="taxa-geral">—</strong><small>Ausências ÷ dias disponíveis</small></article>
+    </section>
+    <div class="panels">
+      <section class="panel" aria-labelledby="equipes-titulo"><h2 id="equipes-titulo">Taxa por equipe</h2><p>Percentual de dias de ausência no recorte selecionado.</p><div id="chart-equipes" class="bars"></div></section>
+      <section class="panel" aria-labelledby="evolucao-titulo"><h2 id="evolucao-titulo">Evolução mensal</h2><p>Taxa geral de absenteísmo por mês.</p><div id="chart-meses" class="bars"></div></section>
+      <section class="panel" aria-labelledby="tipos-titulo"><h2 id="tipos-titulo">Dias por tipo</h2><p>Distribuição ilustrativa dos dias de ausência. Cada atestado simulado equivale a dois dias.</p><div id="chart-tipos" class="bars"></div></section>
+      <section class="panel" aria-labelledby="resumo-titulo"><h2 id="resumo-titulo">Leitura do período</h2><p id="resumo" role="status" aria-live="polite"></p><p class="fine">As taxas são calculadas com valores simulados e servem apenas para demonstrar a interface.</p></section>
+    </div>
+  </main>
+  <footer class="wrap footer">Demonstração fictícia · HTML, CSS e JavaScript · 2026</footer>
+</body>
+</html>

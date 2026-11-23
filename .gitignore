@@ -1,0 +1,18 @@
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Configurações e arquivos temporários de editores
+.idea/
+.vscode/
+*.swp
+*~
+
+# Configurações locais de ambiente e chaves privadas
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
